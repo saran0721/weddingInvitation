@@ -691,3 +691,951 @@ background-position:500px;
 }
 
 }
+/* ==========================================================
+   PREMIUM WEDDING INVITATION
+   PART 2B
+   Couple | Story | Events | Countdown | Gallery
+==========================================================*/
+
+/* ==========================================================
+   COUPLE SECTION
+==========================================================*/
+
+#couple{
+
+    background:#111;
+
+}
+
+.couple-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.couple-container .card{
+
+    width:360px;
+
+    padding:35px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.couple-container .card img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid var(--gold);
+
+    transition:.5s;
+
+}
+
+.couple-container .card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.couple-container h3{
+
+    font-family:'Cinzel';
+
+    font-size:34px;
+
+    margin-top:25px;
+
+    color:var(--gold);
+
+}
+
+.couple-container p{
+
+    margin-top:15px;
+
+    color:#d5d5d5;
+
+    line-height:1.8;
+
+}
+
+.heart{
+
+    font-size:65px;
+
+    color:var(--gold);
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ==========================================================
+   STORY
+==========================================================*/
+
+#story{
+
+    background:#0b0b0b;
+
+}
+
+.timeline{
+
+    max-width:900px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(var(--gold),transparent);
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    width:45%;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:45px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+}
+
+.timeline-item:nth-child(odd){
+
+    margin-right:auto;
+
+}
+
+.timeline-item:nth-child(even){
+
+    margin-left:auto;
+
+}
+
+.timeline-item h3{
+
+    color:var(--gold);
+
+    font-family:'Cinzel';
+
+    margin-bottom:15px;
+
+}
+
+.timeline-item p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   EVENTS
+==========================================================*/
+
+#events{
+
+    background:#121212;
+
+}
+
+.event-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.event-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:45px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.5s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--gold);
+
+}
+
+.event-card i{
+
+    font-size:50px;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+}
+
+.event-card h3{
+
+    font-family:'Cinzel';
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.event-card p{
+
+    color:#ddd;
+
+    margin:8px 0;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================================
+   COUNTDOWN
+==========================================================*/
+
+#countdown{
+
+    background:url("../images/countdown-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+#countdown::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+}
+
+#countdown .section-title,
+
+.counter{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.counter{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.counter div{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:2px solid var(--gold);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    backdrop-filter:blur(10px);
+
+    background:rgba(255,255,255,.04);
+
+    transition:.4s;
+
+}
+
+.counter div:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+
+}
+
+.counter span{
+
+    font-size:56px;
+
+    font-weight:bold;
+
+    color:var(--gold);
+
+}
+
+.counter label{
+
+    margin-top:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+   GALLERY
+==========================================================*/
+
+#gallery{
+
+    background:#0d0d0d;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:22px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:330px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.6s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.06);
+
+    filter:brightness(1.1);
+
+}
+
+/* ==========================================================
+   IMAGE OVERLAY
+==========================================================*/
+
+.gallery-grid img{
+
+    position:relative;
+
+}
+
+.gallery-grid img:hover{
+
+    border:3px solid var(--gold);
+
+}
+
+/* ==========================================================
+   HOVER GLOW
+==========================================================*/
+
+.event-card:hover,
+
+.timeline-item:hover,
+
+.couple-container .card:hover{
+
+    box-shadow:
+
+    0 0 20px rgba(212,175,55,.25),
+
+    0 0 45px rgba(212,175,55,.12);
+
+}
+
+/* ==========================================================
+   GOLD DIVIDER
+==========================================================*/
+
+.gold-divider{
+
+    width:160px;
+
+    height:3px;
+
+    background:linear-gradient(
+
+    to right,
+
+    transparent,
+
+    var(--gold),
+
+    transparent);
+
+    margin:60px auto;
+
+}
+
+/* ==========================================================
+   FADE ANIMATION
+==========================================================*/
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/* ==========================================================
+   PREMIUM WEDDING INVITATION
+   PART 2C
+   Venue | RSVP | Footer | Responsive | Final Effects
+==========================================================*/
+
+/* ==========================================================
+   VENUE
+==========================================================*/
+
+#venue{
+    background:#111;
+}
+
+.venue-card{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+    padding:60px 40px;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow);
+}
+
+.venue-card h3{
+    font-family:'Cinzel',serif;
+    color:var(--gold);
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.venue-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.venue-card a{
+    display:inline-block;
+    padding:15px 35px;
+    background:linear-gradient(135deg,var(--gold),var(--gold-light));
+    color:#000;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.venue-card a:hover{
+    transform:translateY(-5px);
+}
+
+/* ==========================================================
+   RSVP
+==========================================================*/
+
+#rsvp{
+    background:#0d0d0d;
+}
+
+#rsvp form{
+    max-width:750px;
+    margin:0 auto;
+    display:grid;
+    gap:20px;
+}
+
+#rsvp input,
+#rsvp select,
+#rsvp textarea{
+
+    width:100%;
+    padding:18px 20px;
+    border:none;
+    border-radius:12px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    color:white;
+    font-size:16px;
+    outline:none;
+}
+
+#rsvp textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+#rsvp input:focus,
+#rsvp select:focus,
+#rsvp textarea:focus{
+
+    border-color:var(--gold);
+    box-shadow:0 0 15px rgba(212,175,55,.2);
+
+}
+
+#rsvp button{
+    width:220px;
+    justify-self:center;
+}
+
+/* ==========================================================
+   FOOTER
+==========================================================*/
+
+footer{
+
+    padding:70px 20px;
+
+    text-align:center;
+
+    background:#000;
+
+}
+
+footer h2{
+
+    font-family:'Cinzel',serif;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+    font-size:42px;
+
+}
+
+footer p{
+
+    color:#ccc;
+
+    margin-top:10px;
+
+}
+
+/* ==========================================================
+   FLOATING PETALS
+==========================================================*/
+
+.petal{
+
+    position:fixed;
+
+    width:18px;
+
+    height:18px;
+
+    background:rgba(212,175,55,.65);
+
+    border-radius:50% 0 50% 50%;
+
+    animation:fall linear infinite;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-120px) rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================================
+   FADE-IN
+==========================================================*/
+
+.fade{
+
+    animation:fadeIn 1.2s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+==========================================================*/
+
+@media(max-width:992px){
+
+nav{
+
+    padding:18px 25px;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+}
+
+.hero-content h1{
+
+    font-size:56px;
+
+}
+
+.welcome-content h1{
+
+    font-size:70px;
+
+}
+
+.section-title{
+
+    font-size:40px;
+
+}
+
+.timeline::before{
+
+    left:20px;
+
+}
+
+.timeline-item{
+
+    width:calc(100% - 50px);
+
+    margin-left:50px !important;
+
+}
+
+}
+
+/* ==========================================================
+   PHONE
+==========================================================*/
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content span{
+
+    display:block;
+
+    padding:12px 0;
+
+}
+
+.welcome-content h2{
+
+    font-size:30px;
+
+}
+
+.welcome-content h1{
+
+    font-size:60px;
+
+}
+
+.counter{
+
+    gap:15px;
+
+}
+
+.counter div{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+.counter span{
+
+    font-size:36px;
+
+}
+
+.couple-container{
+
+    gap:35px;
+
+}
+
+.couple-container .card{
+
+    width:100%;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==========================================================
+   SMALL DEVICES
+==========================================================*/
+
+@media(max-width:480px){
+
+section{
+
+    padding:80px 20px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.welcome-content h1{
+
+    font-size:48px;
+
+}
+
+.welcome-content h2{
+
+    font-size:24px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.date{
+
+    font-size:18px;
+
+    padding:14px 24px;
+
+}
+
+}
+
+/* ==========================================================
+   GOLD SHIMMER
+==========================================================*/
+
+.shimmer{
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+
+    background-size:300%;
+
+    animation:shimmer 2.5s infinite;
+
+}
+
+/* ==========================================================
+   HOVER EFFECTS
+==========================================================*/
+
+button:hover,
+.venue-card:hover,
+.gallery-grid img:hover,
+.event-card:hover,
+.card:hover{
+
+    transition:.4s ease;
+
+}
+
+/* ==========================================================
+   END
+==========================================================*/
